@@ -2,3 +2,4 @@ ethereum/build
 node_modules
 .env
 ethereum/.env
+.next

@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { Menu } from "semantic-ui-react";
+import { Menu, Button } from "semantic-ui-react";
+import Link from 'next/link';
 
 
 
@@ -14,11 +15,17 @@ export default () => {
 
             <Menu.Menu position='right'>
                 <Menu.Item>
-                    Campaigns
-                </Menu.Item>
+                    <Link href="/campaigns/new">
+                        <a>
+                            <Button
+                                floated="right"
+                                content="Create Campaign"
+                                icon="add circle"
+                                primary
+                            />
+                        </a>
+                    </Link>
 
-                <Menu.Item>
-                    +
                 </Menu.Item>
             </Menu.Menu>
         </Menu>

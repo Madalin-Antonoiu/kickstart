@@ -9,8 +9,6 @@ import Link from "next/link";
 class CampaignShow extends Component {
     static async getInitialProps(props) {
         const campaign = Campaign(props.query.campaign);
-        console.log(campaign);
-
         const summary = await campaign.methods.getSummary().call();
 
         return {
